@@ -40,4 +40,3 @@ The bot is developed to buy always the same troops, you can change it by updatin
 # Credit
 
 Author - Jolan Lacroix (https://vitri0l.github.io/about)
-# Nunu-Willump-Bot
