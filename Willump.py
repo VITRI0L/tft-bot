@@ -4,22 +4,6 @@ from keyboard import add_hotkey
 from lib.utils import color_print
 
 class Willump:
-  def locateAndClick(asset, message):
-    locate = pyautogui.locateOnScreen(asset, confidence=0.9)
-    if locate != None:
-      color_print(
-        message,
-        'green'
-      )
-      location = pyautogui.center(locate)
-      pyautogui.moveTo(x=location.x, y=location.y)
-      sleep(1)
-      pyautogui.mouseDown()
-      sleep(0.5)
-      pyautogui.mouseUp()
-      sleep(1)
-      pyautogui.moveTo(100,200)
-
   def kill(self):
     if self.__state == True:
       self.__state = False
@@ -49,15 +33,31 @@ class Willump:
     )
 
   def snowball(self):
+    def locateAndClick(asset, message):
+      locate = pyautogui.locateOnScreen(asset, confidence=0.9)
+      if locate != None:
+        color_print(
+          message,
+          'green'
+        )
+        location = pyautogui.center(locate)
+        pyautogui.moveTo(x=location.x, y=location.y)
+        sleep(1)
+        pyautogui.mouseDown()
+        sleep(0.5)
+        pyautogui.mouseUp()
+        sleep(1)
+        pyautogui.moveTo(100,200)
+
     while True:
       if self.__state == True:
-        self.locateAndClick('./assets/location/find.png', 'Willump - Match Initialization')
-        self.locateAndClick('./assets/location/accept.png', 'Willump - Match Confirmed')
-        self.locateAndClick('./assets/location/exit.png', 'Willump - Match closed')
-        self.locateAndClick('./assets/location/ok.png', 'Willump - Match closed')
-        self.locateAndClick('./assets/location/buy1.png', 'Willump - Champion buyed')
-        self.locateAndClick('./assets/location/buy2.png', 'Willump - Champion buyed')
-        self.locateAndClick('./assets/location/buy3.png', 'Willump - Champion buyed')
+        locateAndClick('./assets/location/find.png', 'Willump - Match Initialization')
+        locateAndClick('./assets/location/accept.png', 'Willump - Match Confirmed')
+        locateAndClick('./assets/location/exit.png', 'Willump - Match closed')
+        locateAndClick('./assets/location/ok.png', 'Willump - Match closed')
+        locateAndClick('./assets/location/buy1.png', 'Willump - Champion buyed')
+        locateAndClick('./assets/location/buy2.png', 'Willump - Champion buyed')
+        locateAndClick('./assets/location/buy3.png', 'Willump - Champion buyed')
 
   def __init__(self):
     self.__state = False
