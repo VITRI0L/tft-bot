@@ -64,23 +64,23 @@ class Willump:
     print('='*50)
 
     color_print(
-    'Nunu&Willump Bot',
-    'magenta'
+      'Nunu&Willump Bot',
+      'magenta'
     )
 
     color_print(
-    'An automated Bot that plays Teamfight Tactics for you while you sleep!',
-    'cyan'
+      'An automated Bot that plays Teamfight Tactics for you while you sleep!',
+      'cyan'
     )
 
     color_print(
-    ' - Press $ARROW_UP on your keyboard to start the bot',
-    'white'
+      ' - Press $ARROW_UP on your keyboard to start the bot',
+      'white'
     )
 
     color_print(
-    ' - Press $ESC on your keyboard to pause the bot',
-    'white'
+      ' - Press $ESC on your keyboard to pause the bot',
+      'white'
     )
 
     print('='*50)
