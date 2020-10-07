@@ -9,7 +9,7 @@ class Willump:
       self.__state = False
 
     color_print(
-      'Willump - Desactivation! Current state: {}'.format(self.__state), 
+      'Willump - Disabling! Current state: {}'.format(self.__state), 
       'green' if self.__state else 'red'
     )
 
