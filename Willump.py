@@ -39,13 +39,13 @@ class Willump:
       self.__state = True
 
     color_print(
-    'Willump - Activation! Current state: {}'.format(self.__state), 
-    'green' if self.__state else 'red'
+      'Willump - Activation! Current state: {}'.format(self.__state), 
+      'green' if self.__state else 'red'
     )
 
     color_print(
-    'Nunu - This way to... Adventure!',
-    'blue'
+      'Nunu - This way to... Adventure!',
+      'blue'
     )
 
   def snowball(self):
