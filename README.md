@@ -27,11 +27,11 @@ To make it work without problems, please respect the following conditions:
 - Set it to 1600x900 resolution in the settings
 - Once you are in-game, set the game window to 1600x900 Windowed
 
-This should be sufficient to make the bot works.
+It should be sufficient to make the bot works.
 
 # Explanations
 
-When the bot is running please consider to do not use your computer. There is no particular reason for this. It's just, sometimes the script will take control over your mouse to auto-click and it can be disappointing for you to do something in those conditions. Also, the game window has to appear on your screen to make the bot working.
+When the bot is running please consider to do not use your computer. There is no particular reason for that. It's just, sometimes the script will take control over your mouse to auto-click and it can be disappointing for you to do something in those conditions. Also, the game window has to appear on your screen to make the bot working.
 
 The bot is not developed to win games, but not developed to force losing them too, it's just built to spam them without taking the result into consideration. So, sometimes you could win, or lose, it's pure RNG.
 
